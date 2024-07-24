@@ -1,1 +1,133 @@
-<h>Work in progress</h>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/Lama.ico">
+    <title>Syntaxfehlr</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        max-width: 650px;
+        background-color: black;
+        color: white;
+        font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+        margin: auto;
+        margin-top: 5vh;
+        margin-bottom: 0vh;
+        line-height: 1.2em;
+        align-items: center;
+        text-align: center;
+        cursor: url("wii-pointer-ccw.cur") 16 16, auto;
+      }
+
+      body hr {
+        border: 1.5px dotted white;
+      }
+
+      body p:not(:nth-child(2)) {
+        margin-top: 30px;
+      }
+
+      body p:nth-child(2) {
+        margin-top: 0px;
+      }
+
+      body h3:first-child {
+        margin-bottom: 5px;
+      }
+
+      body h1 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+
+      body h2 {
+        margin: 0px;
+        font-weight: 100;
+      }
+
+      @media only screen and (max-width: 650px) {
+        html,
+        body {
+          width: 90vw !important;
+        }
+      }
+
+      ul.a {
+        list-style-type: '> ';
+      }
+
+      a:link {
+        color: #74a4d4;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #74a4d4;
+      }        
+
+      footer {
+        margin-bottom: 40px;
+        position: relative;
+        padding-top: 20px;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 10px;
+      }
+
+      .footer-gif {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Syntaxfehlr</h1>
+        <p>Welcome</p>
+    </header>
+
+    <main>
+        <blockquote class="quote">
+        Bittet, so wird euch gegeben, sucht, so werdet ihr finden, klopft an, so wird euch aufgetan.
+        - the cross guy
+        </blockquote>
+
+        <nav>
+            <ul class="a">
+                <li><a href="Gallery.html">Creative Outlets</a></li>
+                <li><a href="#Games">Games</a></li>
+                <li><a href="#Bookshelf">Bookshelf</a></li>
+                <li><a href="#Projects">Projects</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer>
+      <hr>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">root</a>
+          <a href="#">X</a>
+        </div>
+        <img src="images\goronyan1KW.gif" alt="Footer GIF" class="footer-gif">
+      </div>
+    </footer>
+</body>
+</html>
