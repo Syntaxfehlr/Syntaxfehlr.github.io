@@ -1,0 +1,117 @@
+
+html,
+body {
+width: 100%;
+max-width: 650px;
+background-color: black;
+color: white;
+font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+margin: auto;
+margin-bottom: 0vh;
+line-height: 1.2em;
+align-items: center;
+text-align: center;
+cursor: url("SmoothArrow.cur") 16 16, auto;
+}
+
+hr {
+border: 0.5px solid white;
+}
+
+body p:not(:nth-child(2)) {
+margin-top: 30px;
+}
+
+body p:nth-child(2) {
+margin-top: 0px;
+}
+
+body h3:first-child {
+margin-bottom: 5px;
+}
+
+body h1 {
+margin-top: 50px;
+margin-bottom: 40px;
+}
+
+body h2 {
+margin: 0px;
+font-weight: 100;
+}
+
+@media only screen and (max-width: 650px) {
+html,
+body {
+    width: 90vw !important;
+}
+}
+
+ul.a {
+list-style-type: '> ';
+}
+
+a:link {
+color: #74a4d4;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:visited {
+color: #74a4d4;
+}        
+
+footer {
+margin-bottom: 10px;
+position: relative;
+padding-top: 5px;
+}
+
+.footer-content {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.footer-links {
+display: flex;
+gap: 10px;
+}
+
+.footer-gif {
+position: absolute;
+right: 0;
+top: 50%;
+transform: translateY(-50%);
+width: 50px;
+height: 50px;
+}
+
+.scrolling-container {
+width: 100%;
+overflow: hidden;
+white-space: nowrap;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+background-color: black;
+}
+.scrolling-text {
+display: inline-block;
+font-size: 1.5rem;
+font-style: italic;
+color: #d47474;
+padding-left: 100%;
+animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(-100%);
+}
+}

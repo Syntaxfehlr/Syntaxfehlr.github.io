@@ -1,1 +1,68 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1em;
+    }
+
+    .albums a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .albums img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+
+    .album .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    }
+</style>
+<body>
+    <main>
+        <div class="albums">
+            <a href="Lapland.html">
+              <img src="Gallery/Lapland/Crystal_Lake.jpg" loading="lazy">
+              <span>Lapland</span>
+            </a>
+            <a href="Transatlantic.html">
+              <img src="Gallery/Transatlantic/Atlantic_Sunset.JPG" loading="lazy">
+              <span>Transatlantic</span>
+            </a>
+            <a href="Wattenmeer.html">
+                <img src="Gallery/Wattenmeer/RGGGB.jpg" loading="lazy">
+                <span>Wattenmeer</span>
+            </a>
+            <a href="Alps.html">
+                <img src="Gallery/Alps/Room_to_grow.JPG" loading="lazy">
+                <span>Alps</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">root</a>
+                <a href="https://twitter.com/Syntaxfehlr">X</a>
+            </div>
+            <img src="Misc/goronyan1KW.gif" alt="Footer GIF" class="footer-gif">
+        </div>
+    </footer>
+</body>
+</html>
