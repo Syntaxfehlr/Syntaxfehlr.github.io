@@ -1,8 +1,96 @@
-<ul>
-    <li><a>Magnus's subject</a></li>
-    <li><a>Gukesh investor</a></li>
-    <li><a>Ding Believer</a></li>
-    <li><a>Nepo Wonderer</a></li>
-    <li><a>Anish Watcher</a></li>
-    <li><a>Firouzja Fan</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .list {
+            flex: 1;
+            margin-right: 20px;
+            align-self: flex-start;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5em;
+        }
+        li img {
+            margin-right: 10px;
+        }
+        .content h2 {
+            margin-top: 0px;
+            margin-bottom: 0.1em;
+        }
+        .puzzle-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        }
+
+        .puzzle-container img {
+        max-width: 100%;
+        height: auto;
+        }
+
+        .puzzle-description {
+        margin-top: 10px;
+        font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="list">
+                <ul style="list-style-type: none;">
+                    <li><img src="Chess/Magnus.jpg" width="40" height="40" style="vertical-align: middle;"> The GOAT</li>
+                    <li><img src="Chess/Firouzja.jpeg" width="40" height="40" style="vertical-align: middle;"> Firouzja Fan</li>
+                    <li><img src="Chess/Ding.jpeg" width="40" height="40" style="vertical-align: middle;"> Ding Believer</li>
+                    <li><img src="Chess/Ian.gif" width="40" height="40" style="vertical-align: middle;"> Nepo Wonderer</li>
+                    <li><img src="Chess/Gukesh.jpeg" width="40" height="40" style="vertical-align: middle;"> Gukesh Investor</li>
+                    <li><img src="Chess/Giri.jpeg" width="40" height="40" style="vertical-align: middle;"> Anish Watcher</li>
+                    <li><img src="Chess/Grischuk.jpeg" width="40" height="40" style="vertical-align: middle;"> Grischuk the Champ</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Chess</h2>
+                <a href="https://www.chess.com/member/cptlama">Chess.com Account</a>
+                <div class="puzzle-container">
+                    <img src="Chess/Puzzle.png" alt="Chess Puzzle">
+                    <p class="puzzle-description">White to move</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">root</a>
+                <a href="https://twitter.com/Syntaxfehlr">X</a>
+            </div>
+            <img src="Misc/goronyan1KW.gif" alt="Footer GIF" class="footer-gif">
+        </div>
+    </footer>
+</body>
+</html>
